@@ -28,9 +28,9 @@ const AuthenticatedNav = () => {
   return (
     <nav className="top-navbar">
       <div className="nav-left">
-        <a href="/display-jobs" className="nav-brand">
-          <img src="/jobhub-logo.jpg" alt="JobHub" className="nav-logo" />
-        </a>
+        <div onClick={() => navigate('/display-jobs')} className="nav-brand" style={{ cursor: 'pointer' }}>
+        <img src="/jobhub-logo.jpg" alt="JobHub" className="nav-logo" />
+        </div>
       </div>
       <div className="nav-right">
         {!user ? (
@@ -41,9 +41,9 @@ const AuthenticatedNav = () => {
             Login
           </button>
         ) : (
-          <a href="/logout" className="login-button">
+          <div onClick={() => navigate('/logout')} className="login-button" style={{ cursor: 'pointer' }}>
             Logout
-          </a>
+          </div>
         )}
       </div>
     </nav>
@@ -69,33 +69,34 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Navigate to="/display-jobs" />} />
             <Route path="/display-jobs" element={<DisplayJobsPage />} />
+            <Route path="/login-signup" element={<LoginSignupPage />} />
             <Route
               path="/dashboard"
               element={
                 <PrivateRoute>
-        <JobsDashboard />
-      </PrivateRoute>
-    }
-  />
-  <Route
-    path="/jobs"
-    element={
-      <PrivateRoute>
-        <JobsPage />
-      </PrivateRoute>
-    }
-  />
-  <Route path="/logout" element={<Logout />} />
-  <Route path="/auth/github/callback" element={<GitHubCallback />} />
-  <Route
-    path="/hire"
-    element={
-      <PrivateRoute>
-        <HirePage />
-      </PrivateRoute>
-    }
-  />
-</Routes>
+                  <JobsDashboard />
+                </PrivateRoute>
+              }
+            />
+            <Route
+              path="/jobs"
+              element={
+                <PrivateRoute>
+                  <JobsPage />
+                </PrivateRoute>
+              }
+            />
+            <Route path="/logout" element={<Logout />} />
+            <Route path="/auth/github/callback" element={<GitHubCallback />} />
+            <Route
+              path="/hire"
+              element={
+                <PrivateRoute>
+                  <HirePage />
+                </PrivateRoute>
+              }
+            />
+          </Routes>
         </div>
       </AuthProvider>
     </Router>
