@@ -20,7 +20,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "clean": "if exist build rmdir /s /q build",
+    "clean": "if (Test-Path build) { Remove-Item -Recurse -Force build }",
     "predeploy": "npm run clean && npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
