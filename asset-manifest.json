@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Job-frontend/static/css/main.b92463bc.css",
-    "main.js": "/Job-frontend/static/js/main.cc37ef26.js",
-    "static/js/453.5eb740e2.chunk.js": "/Job-frontend/static/js/453.5eb740e2.chunk.js",
-    "index.html": "/Job-frontend/index.html",
-    "main.b92463bc.css.map": "/Job-frontend/static/css/main.b92463bc.css.map",
-    "main.cc37ef26.js.map": "/Job-frontend/static/js/main.cc37ef26.js.map",
-    "453.5eb740e2.chunk.js.map": "/Job-frontend/static/js/453.5eb740e2.chunk.js.map"
+    "main.css": "https://shreyas-m-246418.github.io/Job-frontend/static/css/main.b92463bc.css",
+    "main.js": "https://shreyas-m-246418.github.io/Job-frontend/static/js/main.891dd57b.js",
+    "static/js/453.5eb740e2.chunk.js": "https://shreyas-m-246418.github.io/Job-frontend/static/js/453.5eb740e2.chunk.js",
+    "index.html": "https://shreyas-m-246418.github.io/Job-frontend/index.html",
+    "main.b92463bc.css.map": "https://shreyas-m-246418.github.io/Job-frontend/static/css/main.b92463bc.css.map",
+    "main.891dd57b.js.map": "https://shreyas-m-246418.github.io/Job-frontend/static/js/main.891dd57b.js.map",
+    "453.5eb740e2.chunk.js.map": "https://shreyas-m-246418.github.io/Job-frontend/static/js/453.5eb740e2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b92463bc.css",
-    "static/js/main.cc37ef26.js"
+    "static/js/main.891dd57b.js"
   ]
 }
